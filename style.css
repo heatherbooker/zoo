@@ -2,8 +2,13 @@
 	 background-image: url(http://workplacecoachblog.com/files/Webpage%20Photos/jungle-wallpaper1.jpg);
 	 height: 560px;
 }
-* {
-	color: pink;
+.container2 {
+	position: relative;
+	top: 100px;
+
+}
+#needsPadding {
+	margin-bottom: 15px;
 }
 .nav a {
 	color:black;
