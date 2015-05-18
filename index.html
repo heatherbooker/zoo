@@ -1,8 +1,8 @@
 <html>
 
 	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src='script.js'></script>
 	</head>
@@ -13,8 +13,8 @@
 			<div class="container">
 				<ul>
 					<li id="name">THE ZOO</li>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#animals">Animals</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="animalList.html">Animals</a></li>
 				</ul>
 			</div>
 		</div>
@@ -22,13 +22,19 @@
 
 			<div class='jumbotron' id='zooBackground'>
 			</div>
+				<img class='animal' id='animal1' src='http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Red.svg/120px-Red.svg.png'>
+				<img class='animal' id='animal2' src='http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Red.svg/120px-Red.svg.png'>
+				<img class='animal' id='animal3' src='http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Red.svg/120px-Red.svg.png'>
 			<div class='row'>
 				<div class='col-md-4'>
 				</div>
 				<div class='col-md-4'>
-					<input type='text' id='add'>
-					<button id='submit' onclick='addAnimal()'>Add Animal</button>
-				</div>
+				<div class="input-group">
+      				<input type="text" class="form-control" placeholder='Name of Animal to Add'>
+     					 <span class="input-group-btn">
+       						 <button class="btn btn-default" type="button">Add Animal</button>
+      					</span>
+    			</div>
 				<div class='col-md-4'>
 				</div>
 			</div>

@@ -2,10 +2,28 @@
 	 background-image: url(http://workplacecoachblog.com/files/Webpage%20Photos/jungle-wallpaper1.jpg);
 	 height: 560px;
 }
+* {
+	color: black;
+}
 .container2 {
 	position: relative;
 	top: 100px;
-
+}
+.animal {
+	position: absolute;
+	z-index: 500;
+}
+#animal1 {
+	top:200px;
+	left:120px;
+}
+#animal2 {
+	top:300px;
+	right:300px;
+}
+#animal3 {
+	top:240px;
+	left:500px;
 }
 #needsPadding {
 	margin-bottom: 15px;
@@ -36,7 +54,18 @@
 #name {
 	font-size: 24pt;
 	padding-right: 280px;
+	color: black;
 }
-
-
+table {
+	border-spacing: 10px;
+	text-align: center;
+}
+caption,
+th {
+	text-align: center;
+}
+#submit {
+	position: relative;
+	right: 10px;
+}
 
