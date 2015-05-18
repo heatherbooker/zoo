@@ -2,6 +2,9 @@
 
 	<head>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'><script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="apprise-v2.js"></script>
+<link rel="stylesheet" href="apprise-v2.css" type="text/css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src='script.js'></script>
@@ -26,20 +29,12 @@
 				<div class="input-group">
       				<input type="text" class="form-control" placeholder='Name of Animal to Add'>
      					 <span class="input-group-btn">
-       						 <button class="btn btn-default" type="button">Add Animal</button>
+       						 <button class="btn btn-default" type="button" onclick="addNew()">Add Animal</button>
       					</span>
     			</div>
     			</div>
     			<div class='col-md-4'>
     			</div>
-<!-- 				<div class='col-md-4'>
-				</div>
-				<div id='needsPadding' class='col-md-4'>
-					<input type='text' class='form-control' id='add'>
-				</div>
-				<div class='col-md-4'>
-					<button id='submit' onclick='addAnimal()'>Add Animal</button>
-				</div> -->
 			</div>
 <div class='row'>
 	<div class='col-md-3'>
@@ -53,9 +48,14 @@
    					<th>Description</th>
  				</tr>
  				<tr>
- 					<td><img src='http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Red.svg/120px-Red.svg.png'></td>
+ 					<td><img class='tableAnimal' src='http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Red.svg/120px-Red.svg.png'></td>
     				<td>Lion</td>
     				<td>Large Carnivorous Feline</td>
+  				</tr>
+  				<tr>
+  					<td><img class='tableAnimal' src='http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Red.svg/120px-Red.svg.png'></td>
+  					<td>Penguin</td>
+  					<td>Fancy-Lookin' Killer Whale Snacks</td>
   				</tr>
 			</table> 
 </div>
