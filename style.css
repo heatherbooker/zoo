@@ -87,6 +87,10 @@ label {
 	left: 95px;
 	padding-bottom: 10px;
 }
+.form-control:focus {
+	box-shadow: #91984f;
+	border-color: #91984f;
+}
 #otherTypeRadio {
 	position: relative;
 	left: -32px;
@@ -99,6 +103,3 @@ label {
 	border-top-left-radius: 4px;
 	border-bottom-left-radius: 4px;
 }
-/*.form-control {
-	box-shadow: #81984f;
-}*/
