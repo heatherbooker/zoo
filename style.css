@@ -107,6 +107,9 @@ label {
 	margin-top: 10px;
 	height: 30px;
 }
+#hiddenURLdiv {
+	display: none;
+}
 /*.form-control:focus {
 	box-shadow: #91984f;
 	border-color: #91984f;
