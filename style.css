@@ -13,22 +13,36 @@
 .animal {
 	position: absolute;
 	z-index: 500;
+	height: 100px;
+	width: 100px;
 }
 .tableAnimal {
 	height:100px;
 	width: 100px;
 }
-#animal1 {
+#animal0 {
 	top:200px;
 	left:120px;
 }
-#animal2 {
+#animal1 {
 	top:300px;
 	right:300px;
 }
-#animal3 {
+#animalx {
 	top:240px;
 	left:500px;
+}
+#animal2 {
+	top:110px;
+	left:410px;
+}
+#animal3 {
+	top:400px;
+	left:300px;
+}
+#animal4 {
+	top:160px;
+	left:600px;
 }
 #needsPadding {
 	margin-bottom: 15px;
