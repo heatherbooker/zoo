@@ -1,20 +1,13 @@
-var options = {
-    buttons: {
-        confirm: {
-            text: 'Okie',
-            className: 'blue',
-            action: function(e) {
-                $('#custom-response').html('You clicked the "Okie" button! You said: "' + e.input + '"');
-                console.log(e);
-                Apprise('close');
-            }
-        },
-    },
-    input: true,
-};
+function makeNew() {
+    var animalName = document.getElementById('prenom').value;
+    var ferocity = document.getElementById('ferocity').value;
+    var descriptn = document.getElementById('description').value;
+    console.log(animalName, ferocity, descriptn)
+}
 
 
-function addNew() {
-    prompt('Please add a brief description of the new animal.');
-    Apprise('Please add a brief description of the new animal.', options);
-};
+// $(document).ready(function() {
+//     $("#addImage").click(function() {
+//         $("#hiddenURLdiv").show();
+//     });
+// });

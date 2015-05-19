@@ -31,14 +31,17 @@
 				</div>
 				<div class='col-md-4'>
 				<div class="input-group">
-      				<input type="text" class="form-control" placeholder='Name of Animal to Add'>
+      				<input type="text" id="prenom" class="form-control" placeholder='Name of Animal to Add'>
      					 <span class="input-group-btn">
-       						 <button class="btn btn-default" type="button" onclick="addNew()">Add Animal</button>
+       						 <button class="btn btn-default" type="button" id="addImage">Add Image</button>
       					</span>
+    			</div>
     			</div>
 				<div class='col-md-4'>
 				</div>
-				</div>
+			</div>
+			<div id='hiddenURLdiv'>
+				<input class='form-control' id='hiddenURL' type='url' placeholder=' Enter URL of animal image.'>
 			</div>
 			<div class='row'>
 				<div class='col-md-4'>
@@ -55,15 +58,17 @@
 				</div>
 				<div class='col-md-6'>
 					<label id='descrip'>Description</label>
-						<input type='text' id='description' placeholder='Please enter a brief description of your animal here.'>
+						<input type='text' id='description' placeholder='   Please enter a brief description of your animal here.'>
 				</div>
 				<div class='col-md-3'>
 				</div>
 			</div>
 			<div class='row'>
-				<div class='col-md-'
+				<div class='col-md-4'>
+				</div>
+				<div class='col-md-4'>
 				<div class="control-group">
-  <label class="control-label"> Type </label>
+  <label class="control-label" id='radio'> Type </label>
   <div class="controls">
     <label class="radio">
       <input type="radio" name="user[role]" id="mammal" value="mammal">
@@ -91,8 +96,20 @@
       </span>
       <input type="text" class="form-control" id='otherRadioText' aria-label="...">
     </div>
+</div>
+<div class='col-md-4'>
+	</div>
   </div>
 </div>
+    		</div>
+    		<div class="row">
+    			<div class='col-md-5'>
+    			</div>
+    			<div class='col-md-2'>
+    			<button id='submitbtn' class='btn btn-default'>Add Animal</button>
+    		</div>
+    		<div class='col-md-5'>
+    		</div>
     		</div>
 			<div id='footer'>
 			</div>

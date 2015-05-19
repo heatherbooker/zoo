@@ -61,6 +61,9 @@
 	padding-right: 280px;
 	color: black;
 }
+.bold {
+	font-size: 16pt;
+}
 table {
 	border-spacing: 10px;
 	text-align: center;
@@ -81,15 +84,38 @@ label {
 }
 #description {
 	width: 100%;
+	border-radius: 4px;
+	border: 1px solid #CCC;
+	height: 34px;
 }
 #descrip {
 	position: relative;
 	left: 95px;
 	padding-bottom: 10px;
 }
-.form-control:focus {
+#submitbtn {
+	margin-top: 20px;
+	border-color: #91984f;
+}
+.btn-default:hover {
+	background-color: #CAD283;
+}
+#hiddenURL {
+	width: 40%;
+	position: relative;
+	left: 340px;
+	margin-top: 10px;
+	height: 30px;
+}
+/*.form-control:focus {
 	box-shadow: #91984f;
 	border-color: #91984f;
+}*/
+.form-control:focus,
+#description:focus {
+  border-color: #A1C36C;
+  box-shadow: 0 1px 1px #A1C36C inset, 0 0 8px #A1C36C;
+  outline: 0 none;
 }
 #otherTypeRadio {
 	position: relative;
