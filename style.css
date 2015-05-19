@@ -44,6 +44,9 @@
 	top:160px;
 	left:600px;
 }
+.cap {
+	text-transform: capitalize;
+}
 #needsPadding {
 	margin-bottom: 15px;
 }
@@ -77,6 +80,7 @@
 }
 .bold {
 	font-size: 16pt;
+	text-transform: capitalize;
 }
 table {
 	border-spacing: 10px;

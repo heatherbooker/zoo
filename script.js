@@ -52,7 +52,7 @@ function createAnimalObject(name, pic, feroc, descript, type) {
 
 function publishAnimal(animalPositionInArray) {
 
-    var animalTableData = "<tr> <td><img class='tableAnimal' src='" + animals[animalPositionInArray].image + "'></td><td class='bold'>" + animals[animalPositionInArray].name + "</td><td>" + animals[animalPositionInArray].ferocity + "</td><td>" + animals[animalPositionInArray].description + "</td><td>" + animals[animalPositionInArray].type + "</td></tr>";
+    var animalTableData = "<tr> <td><img class='tableAnimal' src='" + animals[animalPositionInArray].image + "'></td><td class='bold','cap'>" + animals[animalPositionInArray].name + "</td><td>" + animals[animalPositionInArray].ferocity + "</td><td class='cap'>" + animals[animalPositionInArray].description + "</td><td class='cap'>" + animals[animalPositionInArray].type + "</td></tr>";
 
     $('table').append(animalTableData);
 }
