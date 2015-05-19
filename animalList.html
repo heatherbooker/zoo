@@ -22,20 +22,91 @@
 			</div>
 		</div>
 		<div class='container2'>
-			<div class='row'>
+<div class='row'>
 				<div class='col-md-4'>
 				</div>
 				<div class='col-md-4'>
 				<div class="input-group">
-      				<input type="text" class="form-control" placeholder='Name of Animal to Add'>
+      				<input type="text" id="prenom" class="form-control" placeholder='Name of Animal to Add'>
      					 <span class="input-group-btn">
-       						 <button class="btn btn-default" type="button" onclick="addNew()">Add Animal</button>
+       						 <button class="btn btn-default" type="button" id="addImage">Add Image</button>
       					</span>
     			</div>
     			</div>
-    			<div class='col-md-4'>
-    			</div>
+				<div class='col-md-4'>
+				</div>
 			</div>
+			<div id='hiddenURLdiv'>
+				<input class='form-control' id='hiddenURL' type='url' placeholder=' Enter URL of animal image.'>
+			</div>
+			<div class='row'>
+				<div class='col-md-4'>
+				</div>
+				<div id='float' class='col-md-4'>
+				<label for='ferocity'>Ferocity</label>
+					<input type='range' id='ferocity' min=0 value=5 max=10 step=1>	
+				</div>
+				<div class='col-md-4'>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-md-3'>
+				</div>
+				<div class='col-md-6'>
+					<label id='descrip'>Description</label>
+						<input type='text' id='description' placeholder='   Please enter a brief description of your animal here.'>
+				</div>
+				<div class='col-md-3'>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-md-4'>
+				</div>
+				<div class='col-md-4'>
+				<div class="control-group">
+  <label class="control-label" id='radio'> Type </label>
+  <div class="controls">
+    <label class="radio">
+      <input type="radio" name="user[role]" id="mammal" value="mammal">
+      Mammal
+    </label>
+    <label class="radio">
+      <input type="radio" name="user[role]" id="bird" value="bird">
+      Bird
+    </label>
+    <label class="radio">
+      <input type="radio" name="user[role]" id="fish" value="fish">
+      Fish
+    </label>
+    <label class="radio">
+      <input type="radio" name="user[role]" id="reptileAmphib" value="reptileAmphib">
+      Reptile/Amphibian
+    </label>
+    <label class="radio">
+      <input type="radio" name="user[role]" id='bug' value='bug'>
+      Bug
+    </label>
+    <div class="input-group" id="otherTypeRadio">
+      <span class="input-group-addon" id='otherRadio'>
+        <input type="radio" name="user[role]" aria-label="...">
+      </span>
+      <input type="text" class="form-control" id='otherRadioText' aria-label="...">
+    </div>
+</div>
+<div class='col-md-4'>
+	</div>
+  </div>
+</div>
+    		</div>
+    		<div class="row">
+    			<div class='col-md-5'>
+    			</div>
+    			<div class='col-md-2'>
+    			<button id='submitbtn' class='btn btn-default'>Add Animal</button>
+    		</div>
+    		<div class='col-md-5'>
+    		</div>
+    	</div>
 <div class='row'>
 	<div class='col-md-2'>
 	</div>

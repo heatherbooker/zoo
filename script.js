@@ -11,7 +11,8 @@ var animals = [{
     description: "Fancy Lookin' Killer Whale Snacks",
     type: 'Bird'
 }];
-console.log('i work')
+
+
 $(document).ready(function() {
 
     $("#addImage").click(function() {
@@ -30,6 +31,7 @@ $(document).ready(function() {
         var newAnimal = $(createAnimalObject(animalName, imgURL, ferocity, descriptn, animalType));
         console.log(animals[2]);
         $(putAnimalInZoo(2));
+        $(publishAnimal(2));
     });
 
 });
@@ -48,8 +50,11 @@ function createAnimalObject(name, pic, feroc, descript, type) {
     return animals;
 }
 
-function publishAnimal() {
+function publishAnimal(animalPositionInArray) {
 
+    var animalTableData = "<tr> <td><img class='tableAnimal' src='" + animals[animalPositionInArray].image + "'></td><td class='bold'>" + animals[animalPositionInArray].name + "</td><td>" + animals[animalPositionInArray].ferocity + "</td><td>" + animals[animalPositionInArray].description + "</td><td>" + animals[animalPositionInArray].type + "</td></tr>";
+
+    $('table').append(animalTableData);
 }
 
 function putAnimalInZoo(animalPositionInArray) {
